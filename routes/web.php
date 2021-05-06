@@ -28,3 +28,12 @@ Route::get('/about-us', function () {
 Route::get('/img', function () {
     return "<img src='https://media-exp1.licdn.com/dms/image/C4E0BAQFMUZFU4aihpw/company-logo_200_200/0/1567776941409?e=2159024400&v=beta&t=D413GMpbn-JfWimTa0jyb_zeb5eU9uKJvCL8doO9ivU' alt='Logo Laravel'>";
 });
+
+Route::get('/login', function () {
+    return "<h4>Sign Up to this Website</h4>
+    <label for='Name'>Name</label>
+    <input type='text' placeholder='Inserisci il tuo nome'>
+    <label>E-mail</label>
+    <input type='text' placeholder='Inserisci la tua E-Mail'>
+    <button >Start Now!</button>";
+});
