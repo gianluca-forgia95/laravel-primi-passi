@@ -22,7 +22,12 @@ Route::get('/home', function () {
 });
 
 Route::get('/about-us', function () {
-    return "<h1>About Us</h1>";
+    return "<h1>About Us</h1> 
+     <ul>
+      <li>Chi Siamo</li>
+      <li>Contatti</li>
+      <li>Profili Social</li>
+     </ul> ";
 });
 
 Route::get('/img', function () {
@@ -31,9 +36,13 @@ Route::get('/img', function () {
 
 Route::get('/login', function () {
     return "<h4>Sign Up to this Website</h4>
-    <label for='Name'>Name</label>
+    <label>Name</label>
     <input type='text' placeholder='Inserisci il tuo nome'>
     <label>E-mail</label>
     <input type='text' placeholder='Inserisci la tua E-Mail'>
-    <button >Start Now!</button>";
+    <button>Start Now!</button>";
+});
+
+Route::get('/github-profile', function () {
+    return "<h1>My Github Link</h1> <a href='https://github.com/gianluca-forgia95'>Profile</a>";
 });
